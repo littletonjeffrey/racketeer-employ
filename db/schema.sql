@@ -9,8 +9,12 @@ CREATE TABLE `metas` (
   `lastName` VARCHAR(45) NOT NULL, 
   `alias` VARCHAR(45) NOT NULL,
   `species` VARCHAR(45) NOT NULL, 
-  `team` VARCHAR(45) NOT NULL, 
-  `leader` VARCHAR(45) NOT NULL, 
+  `team` VARCHAR(45), 
   `threatLevel` VARCHAR(45) NOT NULL, 
 );
  
+CREATE TABLE 'knownTeams' (
+    'teamName' VARCHAR(45) NOT NULL,
+    'leader' VARCHAR(45),
+    'active' BINARY,
+)
