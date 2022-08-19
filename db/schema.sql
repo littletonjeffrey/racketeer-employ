@@ -17,4 +17,7 @@ CREATE TABLE 'knownTeams' (
     'teamName' VARCHAR(45) NOT NULL,
     'leader' VARCHAR(45),
     'active' BINARY,
+    FOREIGN KEY (teamName)
+    REFERENCES metas(team)
+    ON DELETE SET NULL
 )
