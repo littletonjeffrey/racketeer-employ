@@ -38,11 +38,18 @@ const pool = mysql.createPool({
     database        :process.env.DB_NAME,
 });
 
+//connecting to DB
+pool.getConnection((err, connection) => {
+    if(err) throw err; //not connected!
+    console.log('Connected!');
+});
+
 //router
 app.get('/', (req, res) => {
     res.render('index');
 });
-
+const routes = require('./server/routes/supes');
+app.use('/', routes);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
