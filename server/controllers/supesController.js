@@ -22,7 +22,7 @@ exports.view = (req, res) => {
    
         //queries needed to be made
         connection.query('SELECT * FROM supes', (err, rows) => {
-            //When done wit hconnection, release it
+            //When done with connection, release it
             connection.release();
 
             if(!err) {
