@@ -7,7 +7,7 @@ USE sokovia_db;
 DROP TABLE IF EXISTS threat_level
 -- creates new table for threat levels
 CREATE TABLE threat_level(
-  id INT NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL,
   threat_lev VARCHAR (30),
   PRIMARY KEY (id)
 )
@@ -15,7 +15,7 @@ CREATE TABLE threat_level(
 DROP TABLE IF EXISTS known_teams
 -- creates new table for teams
 CREATE TABLE known_teams (
-  id INT NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL,
   team_name VARCHAR (45),
   leader VARCHAR (45),
   PRIMARY KEY (id)
@@ -29,7 +29,7 @@ CREATE TABLE supes (
   last_name VARCHAR(45), 
   alias VARCHAR(45),
   team_id INT,
-  threat_level id INT
+  threat_level_id INT
   PRIMARY KEY (id)
   -- allows this person to be assigned to team in known_teams table
   FOREIGN KEY (team_id) REFERENCES known_teams(id)
