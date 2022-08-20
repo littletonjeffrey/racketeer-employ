@@ -16,7 +16,7 @@ VALUES  (1, "X-Men"),
 -- seed data into the supes table
 INSERT INTO supes (first_name, last_name, alias, species, team_id, threat_level_id)
 VALUES ("James", "Howlett", "Wolverine", "mutant", 1, 1),
-		("Scott", "Summers", "Cyclops", "mutant", 1, 1),
+	   ("Scott", "Summers", "Cyclops", "mutant", 1, 1),
        ("Jean", "Grey-Summers", "Marvel-Girl/Phoenix", "mutant", 1, 5),
        ("Robert", "Drake", "Iceman", "mutant", 1, 2),
        ("Henry", "McCoy", "Beast", "mutant", 1, 1),
