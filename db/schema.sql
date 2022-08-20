@@ -28,6 +28,7 @@ CREATE TABLE supes (
   first_name VARCHAR(45), 
   last_name VARCHAR(45), 
   alias VARCHAR(45),
+  species VARCHAR (45),
   team_id INT,
   threat_level_id INT
   PRIMARY KEY (id)

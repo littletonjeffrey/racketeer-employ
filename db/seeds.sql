@@ -3,7 +3,7 @@ INSERT INTO threat_level (id, threat_lev)
 VALUES  (1, "Street"),
         (2, "State"),
         (3, "Global"),
-        (4, 4)
+        (4, "Universal")
         (5, "Cosmic");
 --seed data into the teams table
 INSERT INTO known_teams (id, team_name)
@@ -13,7 +13,7 @@ VALUES  (1, "X-Men"),
         (4, "Seven, The")
         (5, "Watchmen, The");
 --seed data into the supes table
-INSERT INTO supes (firstName, lastName, alias, species, team_id, threat_level_id)
+INSERT INTO supes (first_name, last_name, alias, species, team_id, threat_level_id)
 VALUES ("James", "Howlett", "Wolverine", "mutant", 1, 1),
        ("Scott", "Summers", "Cyclops", "mutant", 1, 1),
        ("Jean", "Grey-Summers", "Marvel-Girl/Phoenix", "mutant", 1, 5),
